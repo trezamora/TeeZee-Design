@@ -68,9 +68,12 @@ ul {
     list-style-type: none;
 }
 
+.site-id {
+    margin: .5em;
+}
+
 .site-nav ul {
-    margin: 0;
-    padding: 0;
+    margin: .5em;
     display: flex;
 }
 
@@ -82,7 +85,6 @@ ul {
 }
 
 .nav-footer ul {
-    margin: 0;
     padding: 0;
     display: flex;
 }
@@ -108,3 +110,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.sticky {
+    position: fixed;
+    z-index: 100;
+  }
