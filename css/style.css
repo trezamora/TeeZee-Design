@@ -1,0 +1,67 @@
+/* GLOBAL RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* GLOBAL COLORS */
+body {
+    background-color: rgba(10, 10, 10, 1);
+    color: rgba(250, 250, 250, 1);
+}
+
+a {
+    color: rgba(250, 250, 250, 1);
+    padding: .5em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(141, 90, 212, 1);
+}
+
+/* GLOBAL TYPOGRAPHY */
+
+body {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    font: 87.5%;
+    line-height: 1.5;
+}
+
+/* LAYOUT STRUCTURE */
+
+body {
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.site-header {
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
