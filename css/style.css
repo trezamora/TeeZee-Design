@@ -89,6 +89,36 @@ ul {
     display: flex;
 }
 
+/* CONTAINERS */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES (FOR RESPONSIVE DESIGN FOR SCREEN SIZE) */
+
+@media (min-width: 768px) {
+    
+  }
+  
+  @media (min-width: 1050px) {
+    body {
+      font-size: 100%;
+    }
+  }
+  
+  @media (min-width: 1250px) {
+    body {
+      font-size: 112.5%;
+    }
+    
+    .img-container {
+      max-width: 1200px;
+    }
+}
+
 /* MEDIA */
 
 img {
@@ -112,6 +142,6 @@ img {
 }
 
 .sticky {
-    position: fixed;
+    position:relative;
     z-index: 100;
-  }
+}
