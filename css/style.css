@@ -73,6 +73,7 @@ body {
     justify-content: space-between;
     position: absolute;
     width: 100%;
+    z-index: 9999;
 }
 
 .site-header h1 {
@@ -190,8 +191,8 @@ section {
     }
 }
 
-/* THE LOTTIE NOT WORKING */
+/* LOTTIE ONLY VIEWABLE ON SYNC */
 #anim{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
