@@ -11,7 +11,7 @@ body {
     font-size: 87.5%;
     color: rgba(255, 255, 255, 0.9);
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
     min-height: 100vh;
 }
 
@@ -54,7 +54,7 @@ a:hover {
 /* MEDIA */
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -131,6 +131,10 @@ section {
     padding-bottom: 11em;
 }
 
+.intro-statement {
+    background-color: rgba(0, 0, 0, 1);
+    padding-bottom: 5em;
+}
 .intro-statement h1 {
     margin: 0;
     padding-top: 0;
@@ -158,6 +162,7 @@ section {
 
 .project-content {
     align-items: center;
+    margin: 0 0 0;
 }
 
 @media (min-width: 768px) {
