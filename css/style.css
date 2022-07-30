@@ -17,12 +17,15 @@ body {
 
 /* TYPOGRAPHY */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: normal;
 }
 
 p {
     max-width: 35em;
+    font-size: 1em;
 }
 
 a {
@@ -31,7 +34,7 @@ a {
 }
 
 a:hover {
-    color: rgba(138, 138, 138, 0.9);
+    color: rgba(57, 134, 242, 0.9);
 }
 
 /* TYPE HIERARCHY */
@@ -64,16 +67,30 @@ body {
 
 /* STRUCTURE */
 
-.site-header, .site-footer {
+.site-footer {
     text-align: center;
 }
 
 .site-header {
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
     position: absolute;
+    align-items: center;
     width: 100%;
     z-index: 9999;
+    transition: .2s ease-out all;
+}
+
+@media (min-width: 1200px) {
+    .site-header {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .site-header h1 {
@@ -89,9 +106,16 @@ body {
 
 /* SITE NAV */
 
-.site-id, .site-nav ul {
+.site-nav ul {
     padding: 0;
-    margin: 1em 1.5em;
+    margin: .5em 1em;
+}
+
+.site-id img {
+    padding: 0;
+    margin: .5em 1em;
+    height: 75%;
+    width: 20%;
 }
 
 .site-nav ul li {
@@ -102,19 +126,6 @@ body {
     display: block;
     padding: 1em 0.5em;
     margin: 0 .2em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
-    transition: .2s ease-out all;
-}
-
-.site-nav ul li a:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.site-nav ul li a {
-    display: block;
-    padding: 1em 0.5em;
-    margin: 0 .2em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
     transition: .2s ease-out all;
 }
 
@@ -136,6 +147,7 @@ section {
     background-color: rgba(0, 0, 0, 1);
     padding-bottom: 5em;
 }
+
 .intro-statement h1 {
     margin: 0;
     padding-top: 0;
@@ -151,15 +163,37 @@ section {
     padding-top: 0;
     font-size: 5vw;
     text-align: center;
-    /* opacity: 0;
-    transition: opacity 230ms cubic-bezier(0.1, 0.7, 1.0, 0.1); */
 }
 
-/* .intro-statement p:hover {
-    opacity: 1;
- } */
+/* SKILL SET SECTION */
 
-/* FEATURED PROJECTS ON HOME PAGE */
+.skill-container {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    padding: 8em 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .skill-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 4em;
+    }
+}
+
+.skill-image img {
+    text-align: center;
+    width: 40%;
+}
+
+.skill-set h3 {
+    font-size: 1.5em;
+    color: rgba(129, 231, 244, 0.9);
+}
+
+/* FEATURED PROJECT SECTION */
 
 .project-content {
     align-items: center;
@@ -170,16 +204,18 @@ section {
     .project-content {
         display: flex;
         justify-content: space-between;
+        justify-content: center;
         align-items: center;
         text-align: center;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 1em;
-    }   
+    }
 
-    .project-content .text-wrap {
-        width: 49%;
+    .text-wrap {
+        /* width: 49%; */
         padding: 3em;
+        text-align: center;
     }
 
     .project-content.swapped {
@@ -191,8 +227,8 @@ section {
     }
 }
 
-/* LOTTIE ONLY VIEWABLE ON SYNC */
-#anim{
+/* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
+#anim {
     width: 100%;
     height: auto;
 }
