@@ -6,7 +6,7 @@
 
 /* GLOBAL BODY SETTINGS */
 body {
-    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-family: futura, sans-serif;
     font-weight: 400;
     font-size: 87.5%;
     color: rgba(255, 255, 255, 0.9);
@@ -24,7 +24,6 @@ h3 {
 }
 
 p {
-    max-width: 35em;
     font-size: 1em;
 }
 
@@ -43,7 +42,6 @@ a:hover {
     font-size: 4em;
     font-weight: 700;
     line-height: 1;
-    margin: 0 0 .4em 0;
 }
 
 .subhead {
@@ -51,13 +49,12 @@ a:hover {
     font-weight: 500;
     color: rgba(129, 231, 244, 0.9);
     line-height: 1;
-    margin: 0 0 .6em 0;
 }
 
 /* MEDIA */
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -139,9 +136,72 @@ section {
 }
 
 .container {
-    padding-top: 11em;
-    padding-bottom: 11em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
 }
+
+/* GRID SYSTEM */
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column {
+        flex-grow: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .one-whole {
+        width: 100%;
+    }
+
+    .one-half {
+        width: 48%;
+    }
+
+    .one-third {
+        width: 31.3333%;
+    }
+
+    .push-one-third {
+        margin-left: 34.3333%;
+    }
+
+    .two-thirds {
+        width: 64.6666%;
+    }
+
+    .one-fourth {
+        width: 23%;
+    }
+
+    .push-one-fourth {
+        margin-left: 26%;
+    }
+
+    .row.centered {
+        justify-content: center;
+    }
+
+    .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* INTRO SECTION */
 
 .intro-statement {
     background-color: rgba(0, 0, 0, 1);
@@ -172,59 +232,20 @@ section {
     text-align: center;
     align-items: baseline;
     justify-content: center;
-    padding: 8em 0 0 0;
-}
-
-@media (max-width: 768px) {
-    .skill-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-top: 4em;
-    }
 }
 
 .skill-image img {
     text-align: center;
-    width: 40%;
+    /* width: 40%; */
+}
+
+.skill-set {
+    padding: 2em 1em;
 }
 
 .skill-set h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: rgba(129, 231, 244, 0.9);
-}
-
-/* FEATURED PROJECT SECTION */
-
-.project-content {
-    align-items: center;
-    margin: 0 0 0;
-}
-
-@media (min-width: 768px) {
-    .project-content {
-        display: flex;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1em;
-    }
-
-    .text-wrap {
-        /* width: 49%; */
-        padding: 3em;
-        text-align: center;
-    }
-
-    .project-content.swapped {
-        flex-direction: row-reverse;
-    }
-
-    .project-content .image-wrap {
-        width: 49%;
-    }
 }
 
 /* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
