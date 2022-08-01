@@ -9,7 +9,7 @@ body {
     font-family: futura, sans-serif;
     font-weight: 400;
     font-size: 87.5%;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 09);
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.9);
     min-height: 100vh;
@@ -236,7 +236,7 @@ section {
 
 .skill-image img {
     text-align: center;
-    /* width: 40%; */
+    width: 40%;
 }
 
 .skill-set {
