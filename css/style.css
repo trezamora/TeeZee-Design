@@ -170,7 +170,6 @@ section {
 
     .one-half {
         width: 48%;
-        border: 1px solid red;
     }
 
     .one-third {
@@ -254,4 +253,24 @@ section {
 #anim {
     width: 100%;
     height: auto;
+}
+
+.colorbook {
+    position: relative;
+    margin: 0;
+}
+
+.colorbook2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.colorbook2:hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 500ms ease-in-out;
 }
