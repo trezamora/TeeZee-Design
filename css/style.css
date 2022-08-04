@@ -140,7 +140,12 @@ section {
     padding-top: 2em;
     padding-bottom: 2em;
     display: flex;
-    align-items: center;
+}
+
+/* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
+#anim {
+    width: 100%;
+    height: auto;
 }
 
 /* GRID SYSTEM */
@@ -232,7 +237,7 @@ section {
     display: flex;
     text-align: center;
     align-items: baseline;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .skill-image img {
@@ -249,15 +254,10 @@ section {
     color: rgba(129, 231, 244, 0.9);
 }
 
-/* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
-#anim {
-    width: 100%;
-    height: auto;
-}
+/* COLORBOOK SECTION */
 
 .colorbook {
     position: relative;
-    margin: 0;
 }
 
 .colorbook2 {
@@ -273,4 +273,41 @@ section {
     top: 0;
     opacity: 1;
     transition: 500ms ease-in-out;
+}
+
+.text-experience h2 {
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+/* ME SECTION */
+
+.me-image {
+    position: relative;
+    align-items: center;
+}
+
+.me2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.me2:hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 250ms ease-in-out;
+}
+
+.text-me h1 {
+    font-size: 3.2em;
+    margin: 0;
+}
+
+.text-me h2 {
+    font-size: 2em;
+    margin-top: 0;
 }
