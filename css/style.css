@@ -62,6 +62,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* STRUCTURE */
 
 .site-footer {
@@ -169,6 +170,7 @@ section {
 
     .one-half {
         width: 48%;
+        border: 1px solid red;
     }
 
     .one-third {
