@@ -5,4 +5,3 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: 'js/data.json'
 })
-
