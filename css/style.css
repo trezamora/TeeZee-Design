@@ -140,7 +140,7 @@ section {
 @media (max-width: 768px) {
 
     .toggle-nav {
-        /* position: absolute; */
+        position: absolute;
     }
 
     .toggle-nav .site-nav .menu-button {
