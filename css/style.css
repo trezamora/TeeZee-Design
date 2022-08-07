@@ -12,7 +12,6 @@ body {
     color: rgba(255, 255, 255, 09);
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.9);
-    min-height: 100vh;
 }
 
 /* TYPOGRAPHY */
@@ -60,52 +59,32 @@ img {
 }
 
 body {
+    margin: 0;
     min-height: 100vh;
 }
 
+/* NAV CONTAINER */
 
-/* STRUCTURE */
+.nav-container {
+    max-width: auto;
+    margin: 0;
+    padding: 0.8em;
+}
 
-.site-footer {
+/* LOGO AREA */
+
+.site-id h1 {
+    font-size: 1em;
+    margin: 0;
+    padding: 1em;
     text-align: center;
-}
-
-.site-header {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 1em 0;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    align-items: center;
-    width: 100%;
-    z-index: 9999;
-    transition: .2s ease-out all;
-}
-
-.site-header h1 {
-    font-size: 1.5em;
-    font-weight: 400;
-}
-
-.site-header h1 a {
-    display: inline-block;
-    transition: .2s ease-out all;
-}
-
-/* SITE LOGO */
-
-.site-id img {
-    padding: 0;
-    margin-left: 2em;
-    height: 75%;
-    width: 15%;
 }
 
 /* SITE NAV */
 
 .site-nav ul {
     margin: 0;
-    padding: 1em;
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -118,115 +97,6 @@ body {
 
 .site-nav .menu-button {
     display: none;
-}
-
-/* MAIN CONTENT */
-
-section {
-    padding: 1em;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    display: flex;
-}
-
-/* TOGGLE NAV */
-
-@media (max-width: 768px) {
-
-    .toggle-nav {
-        position: absolute;
-    }
-
-    .toggle-nav .site-nav .menu-button {
-        display: block;
-        display: inline-block;
-        background-color: transparent;
-        margin-right: 1.5em;
-    }
-
-    .toggle-nav[data-navstate="closed"] ul {
-        height: 0;
-        overflow: hidden;
-    }
-
-    .toggle-nav[data-navstate="open"] ul {
-        height: auto;
-        overflow: visible;
-    }
-
-    /* NAVICON */
-
-    .toggle-nav .site-nav .menu-button.navicon {
-        border: none;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    .toggle-nav .site-nav .menu-button.navicon::after {
-        content: "\2630";
-        display: inline-block;
-        padding: 0;
-        margin: 0;
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 2rem;
-    }
-
-    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
-        content: "\2715";
-    }
-}
-
-/* ANIMATED TOGGLE NAV MENU */
-
-@media (max-width: 767px) {
-    .toggle-nav.animated ul {
-        display: block;
-        /* max-height: 0; */
-        overflow: hidden;
-        opacity: 0;
-        padding: 0;
-        /* border-width: 0; */
-        transition: all 0.3s ease;
-    }
-
-    .toggle-nav.animated[data-navstate="open"] ul {
-        max-height: 138em;
-        opacity: 1;
-        padding: 0.5em 0;
-        /* border-width: 0px; */
-        transition: all 0.6s ease;
-    }
-
-    .toggle-nav.animated li {
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-
-    .toggle-nav.animated[data-navstate="open"] li {
-        padding: 0.25em;
-        opacity: 1;
-        transition: all 0.6s ease 0.2s;
-    }
-
-    .toggle-nav.animated li a {
-        padding: 0;
-        transition: all 0.3s ease;
-    }
-
-    .toggle-nav.animated[data-navstate="open"] li a {
-        padding: 0.75em;
-    }
-}
-
-/* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
-#anim {
-    width: 100%;
-    height: auto;
 }
 
 /* GRID SYSTEM */
@@ -288,6 +158,31 @@ section {
     }
 }
 
+/* MAIN CONTENT */
+
+section {
+    padding: 1em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO NAV STYLING */
+
+@media (min-width: 768px) {
+    .site-header .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* LOTTIE ONLY VIEWABLE ON LIVE SERVER */
+
+#anim {
+    width: 100%;
+    height: auto;
+}
+
 /* INTRO SECTION */
 
 .intro-statement {
@@ -318,7 +213,6 @@ section {
     display: flex;
     text-align: center;
     align-items: baseline;
-    /* justify-content: center; */
 }
 
 .skill-image img {
@@ -396,4 +290,120 @@ section {
 .text-me h2 {
     font-size: 1.5rem;
     margin-top: 0.5em;
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+
+    .site-header {
+        padding: .5em 0 0 0;
+    }
+
+    .toggle-nav .site-id {
+        position: absolute;
+    }
+
+    .toggle-nav .site-nav {
+        text-align: right;
+    }
+
+    .toggle-nav .site-nav .menu-button {
+        display: block;
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        /* cursor: pointer; */
+        padding: 0.3em 0.8em;
+        margin-bottom: 0.8em;
+        border: 1px solid black;
+    }
+
+    .toggle-nav .site-nav .menu-button::selection {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .toggle-nav .site-nav a:hover {
+        color: rgba(57, 134, 242, 0.9);
+        text-decoration: underline;
+    }
+
+    .toggle-nav[data-navstate="closed"] ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .toggle-nav[data-navstate="open"] ul {
+        height: auto;
+        overflow: visible;
+    }
+
+    /* NAVICON */
+
+    .toggle-nav .site-nav .menu-button.navicon {
+        border: none;
+        color: rgba(255, 255, 255, 0);
+        padding: 0;
+    }
+
+    .toggle-nav .site-nav .menu-button.navicon::after {
+        content: "\2630";
+        display: inline-block;
+        padding: 0.4em;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.5em;
+    }
+
+    .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
+        content: "\2715";
+    }
+}
+
+/* ANIMATED TOGGLE NAV MENU */
+
+@media (max-width: 767px) {
+    .toggle-nav.animated ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        padding: 0;
+        border-width: 0;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-nav.animated[data-navstate="open"] ul {
+        max-height: 138em;
+        opacity: 1;
+        padding: 0.5em 0;
+        border-width: 0px;
+        transition: all 0.6s ease;
+    }
+
+    .toggle-nav.animated li {
+        padding: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-nav.animated[data-navstate="open"] li {
+        padding: 0.25em;
+        opacity: 1;
+        transition: all 0.6s ease 0.2s;
+    }
+
+    .toggle-nav.animated li a {
+        padding: 0;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-nav.animated[data-navstate="open"] li a {
+        padding: 0.75em;
+    }
 }
