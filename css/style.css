@@ -161,7 +161,7 @@ body {
 /* MAIN CONTENT */
 
 section {
-    padding: 1em;
+    padding: 5em;
     display: grid;
     align-items: center;
     justify-content: center;
