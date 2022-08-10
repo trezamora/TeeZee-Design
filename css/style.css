@@ -292,6 +292,53 @@ section {
     margin-top: 0.5em;
 }
 
+/* PROJECT LIST */
+
+.projects-container {
+    display: flex;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.text-projects {
+    padding: 0;
+}
+
+.text-projects h1 {
+    font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+    .text-projects h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.text-projects a {
+    text-decoration: none;
+}
+
+.projects-image {
+    position: relative;
+    align-items: center;
+
+}
+
+.projects-image2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.projects-image2:hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .75;
+    transition: 250ms ease-in-out;
+}
+
 /* TOGGLE NAV */
 
 @media (max-width: 767px) {
@@ -313,7 +360,6 @@ section {
         display: inline-block;
         background-color: transparent;
         border: none;
-        /* cursor: pointer; */
         padding: 0.3em 0.8em;
         margin-bottom: 0.8em;
         border: 1px solid black;
