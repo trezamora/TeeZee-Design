@@ -125,7 +125,7 @@ body {
     }
 
     .one-half {
-        width: 47%;
+        width: 49%;
     }
 
     .one-third {
@@ -194,6 +194,14 @@ section {
     margin: 0;
     padding-top: 0;
     font-size: 25vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro-statement h2 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 22vw;
     text-transform: uppercase;
     text-align: center;
 }
@@ -338,6 +346,41 @@ section {
     opacity: .75;
     transition: 250ms ease-in-out;
 }
+
+/* PROCESS SECTION */
+
+.process-container {
+    border: 1px solid red;
+}
+
+.text-process {
+    display: box;
+    border: 1px solid blue;
+}
+
+.text-process2 {
+    border: 1px solid yellow;
+}
+
+.text-process3 {
+    border: 1px solid green;
+}
+
+.text-process h1 {
+    font-size: 6rem;
+}
+
+.text-process3 p {
+    font-size: 1rem;
+    font-style: none;
+}
+
+@media (max-width: 1000px) {
+    .text-process h1 {
+        font-size: 9h;
+    }
+}
+
 
 /* TOGGLE NAV */
 
