@@ -1,5 +1,4 @@
 /* GLOBAL RESET */
-
 * {
     box-sizing: border-box;
 }
@@ -384,6 +383,38 @@ section {
     font-size: 1rem;
     padding: 1.5em 0;
     line-height: 1.5;
+}
+
+/* PROJECT FORMAT */
+
+.pcontent-container {
+    background-color: white;
+    color: rgba(3, 3, 3, 0.9);
+    border: 1px solid red;
+}
+
+.project-year {
+    margin-bottom: 6.5em;
+    border: 1px solid rgb(255, 242, 0);
+}
+
+.project-deliverables {
+    border: 1px solid rgb(0, 255, 30);
+}
+
+.project-deliverables ul {
+    list-style: none;
+    margin-bottom: 5em;
+    padding: 0;
+    border: 1px solid rgb(0, 255, 30);
+}
+
+.project-title {
+    border: 1px solid rgb(8, 0, 255);
+}
+
+section.hero {
+    padding: 0;
 }
 
 /* TOGGLE NAV */
