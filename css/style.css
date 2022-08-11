@@ -11,7 +11,7 @@ body {
     font-size: 87.5%;
     color: rgba(255, 255, 255, 09);
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(8, 8, 8, 0.9);
 }
 
 /* TYPOGRAPHY */
@@ -186,7 +186,7 @@ section {
 /* INTRO SECTION */
 
 .intro-statement {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(8, 8, 8, 1);
     padding-bottom: 5em;
 }
 
@@ -316,7 +316,7 @@ section {
     font-size: 6rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .text-projects h1 {
         font-size: 2.5rem;
     }
@@ -349,38 +349,36 @@ section {
 
 /* PROCESS SECTION */
 
-.process-container {
-    border: 1px solid red;
+.process-container1 {
+    background-color: rgba(19, 19, 19, 0.9);
+}
+
+.process-container2 {
+    background-color: rgba(8, 8, 8, 1);
 }
 
 .text-process {
-    display: box;
-    border: 1px solid blue;
-}
-
-.text-process2 {
-    border: 1px solid yellow;
-}
-
-.text-process3 {
-    border: 1px solid green;
+    max-width: 1000px;
 }
 
 .text-process h1 {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
-.text-process3 p {
+.text-process h2 {
+    font-size: 2rem;
+    color: rgba(170, 19, 69, 1);
+}
+
+.text-process h3 {
+    font-size: 1.2rem;
+}
+
+.text-process p {
     font-size: 1rem;
-    font-style: none;
+    padding: 1.5em 0;
+    line-height: 1.5;
 }
-
-@media (max-width: 1000px) {
-    .text-process h1 {
-        font-size: 9h;
-    }
-}
-
 
 /* TOGGLE NAV */
 
