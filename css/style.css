@@ -387,31 +387,49 @@ section {
 
 /* PROJECT FORMAT */
 
-.pcontent-container {
+.proj-container {
     background-color: white;
     color: rgba(3, 3, 3, 0.9);
-    top
 }
 
-.project-year {
+.proj-year {
     margin: 2em 0;
 }
 
-.project-deliverables {
+.proj-deliverables {
     margin: 2em 0;
 }
 
-.project-deliverables ul {
+.proj-deliverables ul {
     list-style: none;
     padding: 0;
 }
 
-.project-title {
+.proj-title {
     margin: 2em 0;
 }
 
 section.hero {
     padding: 0;
+}
+
+.proj {
+    position: relative;
+}
+
+.proj2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.proj2:hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 500ms ease-in-out;
 }
 
 /* TOGGLE NAV */
