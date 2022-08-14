@@ -9,8 +9,15 @@ body {
     font-weight: 400;
     font-size: 87.5%;
     color: rgba(255, 255, 255, 09);
-    margin: 0 auto;
+    margin: 0;
     background-color: rgba(3, 3, 3, 0.9);
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* TYPOGRAPHY */
@@ -161,9 +168,6 @@ body {
 
 section {
     padding: 5em;
-    display: grid;
-    align-items: center;
-    justify-content: center;
 }
 
 /* LOGO NAV STYLING */
@@ -299,52 +303,53 @@ section {
     margin-top: 0.5em;
 }
 
-/* PROJECT LIST */
+/* WORK SECTION */
 
-.projects-container {
-    display: flex;
+.work-container {
+    display: grid;
     text-align: center;
+    justify-content: center;
     padding: 1.5em;
 }
 
-.text-projects {
+.text-work {
     padding: 0;
 }
 
-.text-projects h1 {
+.text-work h1 {
     font-size: 6rem;
 }
 
 @media (max-width: 1060px) {
-    .text-projects h1 {
+    .text-work h1 {
         font-size: 4rem;
     }
 }
 
 @media (max-width: 768px) {
-    .text-projects h1 {
+    .text-work h1 {
         font-size: 2.5rem;
     }
 }
 
-.text-projects a {
+.text-work a {
     text-decoration: none;
 }
 
-.projects-image {
+.work-image {
     position: relative;
     align-items: center;
 
 }
 
-.projects-image2 {
+.work-image2 {
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
 }
 
-.projects-image2:hover {
+.work-image2:hover {
     position: absolute;
     left: 0;
     top: 0;
@@ -387,30 +392,29 @@ section {
 
 /* PROJECT FORMAT */
 
-.proj-container {
-    background-color: white;
-    color: rgba(3, 3, 3, 0.9);
+.hero {
+    padding: 0;
+}
+
+.proj-wrapper {
+    display: flex;
+    gap: 25px;
 }
 
 .proj-year {
-    margin: 2em 0;
+    padding: 0 5% 0 0;
 }
 
 .proj-deliverables {
-    margin: 2em 0;
+    padding: 0 15% 0 0;
 }
 
 .proj-deliverables ul {
+    padding: 0;
+}
+
+.proj-deliverables li {
     list-style: none;
-    padding: 0;
-}
-
-.proj-title {
-    margin: 2em 0;
-}
-
-section.hero {
-    padding: 0;
 }
 
 .proj {
@@ -430,6 +434,30 @@ section.hero {
     top: 0;
     opacity: 1;
     transition: 500ms ease-in-out;
+}
+
+.up-next {
+    text-align: center;
+}
+
+.proj-button {
+    font-size: inherit;
+    background-color: rgba(9, 194, 160, 1);
+    border: 1px solid rgba(9, 194, 160, 1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1em 2em;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.proj-button:hover {
+    background-color: rgba(0, 125, 102, 1);
+    border-color: rgba(0, 125, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    border-radius: 1em;
 }
 
 /* TOGGLE NAV */
