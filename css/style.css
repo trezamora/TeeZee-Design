@@ -309,7 +309,6 @@ section {
     display: grid;
     text-align: center;
     justify-content: center;
-    padding: 1.5em;
 }
 
 .text-work {
@@ -339,7 +338,6 @@ section {
 .work-image {
     position: relative;
     align-items: center;
-
 }
 
 .work-image2 {
