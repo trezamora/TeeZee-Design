@@ -57,6 +57,13 @@ a:hover {
     line-height: 1;
 }
 
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+
 /* MEDIA */
 
 img {
@@ -72,6 +79,7 @@ body {
 /* NAV CONTAINER */
 
 .nav-container {
+    background-color: rgba(8, 8, 8, 1);
     max-width: auto;
     margin: 0;
     padding: 0.8em;
@@ -168,6 +176,12 @@ body {
 
 section {
     padding: 5em;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2em;
+    }
 }
 
 /* LOGO NAV STYLING */
@@ -451,6 +465,12 @@ section {
     padding: 1em;
 }
 
+.text-proj2 {
+    padding: 1em;
+    text-align: center;
+    max-width: 800px;
+}
+
 .text-swap {
     text-align: right;
 }
@@ -486,9 +506,9 @@ section {
     background-color: rgba(9, 194, 160, 1);
     border: 1px solid rgba(9, 194, 160, 1);
     color: rgba(255, 255, 255, 0.8);
-    padding: 1em 2em;
+    padding: 1em 1em;
     display: inline-block;
-    margin: 0.5em 0.5em 0.5em 0;
+    margin: 1.5em;
     text-align: center;
     border-radius: .5em;
 }
@@ -499,6 +519,16 @@ section {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     border-radius: 1em;
+}
+
+/* MY SWIPER ADJUSTMENTS */
+
+.swiper {
+    --swiper-theme-color: white;
+}
+
+.swiper-wrapper {
+    margin-top: 3em;
 }
 
 /* TOGGLE NAV */
