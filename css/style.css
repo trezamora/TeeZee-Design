@@ -113,6 +113,27 @@ body {
     display: none;
 }
 
+footer {
+    background-color: rgba(8, 8, 8, 1);
+    font-size: 1em;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    display: inline-block;
+    padding: 1em;
+}
+
 /* GRID SYSTEM */
 
 .row {
@@ -392,18 +413,19 @@ section {
 /* PROCESS SECTION */
 
 .process-container1 {
-    background-color: rgba(19, 19, 19, 0.9);
+    background-color: rgba(28, 28, 28, 0.9);
 }
 
 .process-container2 {
-    background-color: rgba(8, 8, 8, 1);
+    background-color: rgba(3, 3, 3, 0.9);
 }
 
-.text-process {
+.text-process button {
+    font-family: futura, sans-serif;
     max-width: 1000px;
 }
 
-.text-process h1 {
+.text-process {
     font-size: 4rem;
 }
 
@@ -420,6 +442,39 @@ section {
     font-size: 1rem;
     padding: 1.5em 0;
     line-height: 1.5;
+}
+
+.accordion {
+    font-family: futura, sans-serif;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    transition: 500ms ease-in;
+}
+
+/* .active,
+.accordion:hover {
+    background-color: rgba(170, 19, 69, 1)
+} */
+
+.accordion:after {
+    content: '\02795';
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
 }
 
 /* PROJECT FORMAT */
