@@ -1,3 +1,11 @@
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('anim'),
+    render: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/data.json'
+})
+
 document.addEventListener('DOMContentLoaded', function () {
 
     /* TOGGLE NAV MOBILE MENU FOR SMALL SCREENS */
