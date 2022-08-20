@@ -532,12 +532,12 @@ section {
 
 .proj {
     position: relative;
-    padding: 4em 0;
+    padding: 2em 0;
 }
 
 .proj2 {
     position: absolute;
-    padding: 4em 0;
+    padding: 2em 0;
     left: 0;
     top: 0;
     opacity: 0;
@@ -545,7 +545,7 @@ section {
 
 .proj2:hover {
     position: absolute;
-    padding: 4em 0;
+    padding: 2em 0;
     left: 0;
     top: 0;
     opacity: 1;
