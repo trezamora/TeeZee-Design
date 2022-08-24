@@ -449,27 +449,6 @@ section {
     text-decoration: none;
 }
 
-.work-image {
-    position: relative;
-    align-items: center;
-}
-
-.work-image2 {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
-
-.work-image2:hover {
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .75;
-    transition: 250ms ease-in-out;
-}
 
 /* PROCESS SECTION */
 
