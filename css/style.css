@@ -416,7 +416,7 @@ section {
 
 @media (max-width: 768px) {
     .gallery span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(420px);
     }
 }
 
