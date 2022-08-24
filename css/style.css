@@ -360,8 +360,67 @@ section {
 
 /* WORK SECTION */
 
-.work-container {
+.work-ani {
+    margin: 0;
+    height: 35vh;
     display: grid;
+    place-items: center;
+    background-color: rgba(3, 3, 3, 0.9);
+}
+
+.gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(1200px) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1200px) rotateY(360deg);
+    }
+}
+
+.gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(580px);
+}
+
+.gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(520px);
+    }
+}
+
+@media (max-width: 1060px) {
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(480px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery span {
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+    }
+}
+
+.work-container {
     text-align: center;
     justify-content: center;
 }
@@ -396,6 +455,7 @@ section {
 }
 
 .work-image2 {
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
@@ -403,6 +463,7 @@ section {
 }
 
 .work-image2:hover {
+
     position: absolute;
     left: 0;
     top: 0;
