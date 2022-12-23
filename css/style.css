@@ -330,6 +330,11 @@ section {
 
 /* PROJECT SECTION */
 
+.text-grid h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
 @media (min-width: 768px) {
 
     .project-container {
@@ -438,6 +443,7 @@ section {
     display: block;
     overflow: hidden;
     word-wrap: break-word;
+    text-transform: uppercase;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -445,7 +451,7 @@ section {
 }
 
 .image-hover-text-title {
-    font-size: 3rem;
+    font-size: 2rem;
     display: block;
     text-align: center;
     margin: 0 auto;
